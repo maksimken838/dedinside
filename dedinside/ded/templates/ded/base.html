@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/5878c03af4.js" crossorigin="anonymous"></script>
+        {% load static %}
+        <link rel="stylesheet" href="/static/css/main.css">
+        <link rel="icon" href="/static/img/some.png">
+        <title>Ded Inside Studio</title>
+    </head>
+
+    <body>
+        <div class="content-wrap">
+            <nav class="navbar navbar-expand-md">
+                <a href="#" class="navbar-brand"><img src="/static/img/wavelogo.png"></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="toggler">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active custom" href="/">Главная</a>
+                        <a class="nav-item nav-link active" href="/news">Новости</a>
+                        <a class="nav-item nav-link active" href="/lessons">Записаться</a>
+                        <a class="nav-item nav-link active" href="/about_us">О нас</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="content">
+                {% block content%}
+                {% endblock %}
+            </div>
+
+        </div>
+
+        <footer>
+            <a href="#"><img class="logo" src="/static/img/wavecut.png"></a>
+            <div class=container>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt" style="font-size:30px"></i><br>
+                    Ставрополь, ул. Савченко, 51<br>
+                    <a href="#">Посмотреть на карте</a>
+                </div>
+                <div class="phone">
+                    <i class="fas fa-phone-alt" style="font-size:30px"></i><br>
+                    8:00 - 22:00<br>
+                    <a href="#">+7-968-266-43-94</a>
+                </div>
+                <div class="mail">
+                    <i class="fas fa-envelope" style="font-size:30px"></i><br>
+                    По любым вопросам:<br>
+                    <a href="#">ded_inside@gmail.com</a>
+                </div>
+            </div>
+            <div class="social">
+                <a href="https://vk.com/dedinside_stv"><i class="fab fa-vk" style="font-size: 30px"></i></a>
+                <a href="https://instagram.com/dead_inside_studio_?igshid=1ah8pypjvsopf"><i class="fab fa-instagram" style="font-size: 30px"></i></a>
+                <a href="#"><i class="fab fa-whatsapp" style="font-size: 30px"></i></a>
+                <a href="#"><i class="fab fa-telegram" style="font-size: 30px"></i></a>
+            </div>
+            <br><div class="text">Ded Inside Studio 2020</div>
+        </footer>
+    </body>
+</html>

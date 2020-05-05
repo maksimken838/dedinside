@@ -1,0 +1,38 @@
+.mycard {
+    justify-self: center;
+    width: 80%;
+    margin-bottom: 10px;
+    border: 1px solid #3c3c3c;
+    /*
+    box-shadow: 0 2px 4px 0 #888;
+    border-radius: 5px;
+    */
+}
+
+.mycard:hover {
+    /*box-shadow: 0 4px 8px 0 #888;*/
+}
+
+.mycard-title {
+    padding: 5px;
+    background: #3c3c3c;
+    color: #74bb50;
+    /*border-radius: 4px 4px 0 0;*/
+}
+
+.mycard-content {
+    padding: 5px;
+    background: #bbb;
+    color: #3c3c3c;
+    /*border-radius: 0 0 4px 4px;*/
+}
+
+.readmore {
+    color: #74bb50;
+    font-size: 18px;
+    text-align: center;
+}
+
+.readmore:hover {
+    color: #74bb50;
+}
